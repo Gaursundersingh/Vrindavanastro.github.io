@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.modal-open .modal {
+    background: rgba(0, 0, 0, 0.48);
+}
+.modal-body {
+    padding: 0 2em 2.5em;
+}
+.modal-dialog {
+    margin: 6em auto 0;
+} 
+.modal-body h4 {
+    font-size: 1.6em;
+    color: #ff2f68; 
+    font-weight: 300;
+    margin: 1em 0 .3em;
+}
+.bnr-modal .modal-header {
+    border: none;
+    min-height: 2.5em;
+    padding: 0.5em 2em 0;
+}
+.bnr-modal button.close {
+    color: #ff2f68;
+    opacity: .9;
+    font-size: 2.5em;
+	outline:none;
+}
+.modal-body p {
+    font-weight: 300;
+} 
+
+
+a.agilebtn {
+    font-size: 1em;
+    font-family: 'Merienda', cursive !important;
+
+    color: rgb(8, 0, 0); 
+    padding: 0.7em 2em;
+    display: inline-block; 
+	outline:none;
+	margin-top: 1em; 
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;
+} 
+.agilebtn::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+    border: 1px solid rgb(31, 83, 204);
+    border-radius: 10px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.agilebtn:hover::before{
+	opacity: 0;
+	-webkit-transform: scale(1.2,1.2);
+	-moz-transform: scale(1.2,1.2);
+	-o-transform: scale(1.2,1.2);
+	-ms-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+}
+.agilebtn::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+    background-color: rgba(112, 65, 231, 0.524);
+    border-radius: 10px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform: scale(0.5,0.5);
+	-moz-transform: scale(0.5,0.5);
+	-o-transform: scale(0.5,0.5);
+	-ms-transform: scale(0.5,0.5);
+	transform: scale(0.5,0.5);
+}
+.agilebtn:hover::after{
+	opacity: 1 ;
+	-webkit-transform: scale(1,1);
+	-moz-transform: scale(1,1);
+	-o-transform: scale(1,1);
+	-ms-transform: scale(1,1);
+	transform: scale(1,1);
+}
+
+
+
+
+
+
+
+.bnr-modal button.close {
+    color: #ff2f68;
+    opacity: .9;
+    font-size: 2.5em;
+	outline:none;
+}
+
+.sl-wrapper .sl-close {
+	display: none;
+	position: fixed;
+	right: 30px;
+	top: 30px;
+	z-index: 1015;
+	font-size: 35px;
+	outline:none;
+}
+
+@media(max-width:767px){
+.modal-dialog {
+    margin: 4em auto;
+    width: 80%;
+}
+.modal {
+    padding: 0 !important;
+} 
+}
+
+
+@media (max-width: 600px) {
+    .modal-dialog {
+        margin: 2em auto;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-body {
+        padding: 0 1.5em 1.5em;
+    }
+    a.agilebtn { 
+        padding: 0.7em 1.5em; 
+    }
+}
+
+@media (max-width: 384px) {
+    .modal-dialog { 
+        width: 95%;
+    }
+    .modal-body h4 {
+        font-size: 1.4em; 
+        margin: 0.5em 0 .3em;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .modal-body {
+        padding: 0 1em 1.5em;
+    }
+    .modal-dialog {
+        margin: 1em auto; 
+    }
+}
+
+@media (max-width: 414px) {
+    a.agilebtn {
+        padding: 0.7em 1.8em;
+        font-size: 0.9em;
+    }
+}
+
+
